@@ -1,7 +1,7 @@
 package com.example.friday.Rest;
 
-import com.example.friday.Model.ComptonDao;
-import com.example.friday.Model.ComptonService;
+import com.example.friday.Model.ComptonOperation;
+import com.example.friday.Model.ComptonView;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -13,18 +13,18 @@ import retrofit2.http.PUT;
 
 public class ApiInterface {
 
-    @GET("compton_android")
-    Call<ComptonDao> getComptonModel();
+    @GET("comptons")
+    Call<ComptonOperation> getComptonModel();
 
     @FormUrlEncoded;
     @POST("compton")
-    Call<ComptonService> postComptonModel(@Field("name") String name, @Field("email") String email);
+    Call<ComptonView> postComptonModel(@Field("userId") String userId, @Field("email") String email);
 
     @FormUrlEncoded
     @PUT("compton")
-    Call<ComptonService> putComptonModel (@Field("bp") String bp, @Field("name") String name, @Field("email") String email);
+    Call<ComptonView> putComptonModel (@Field("bp") String bp, @Field("name") String name, @Field("email") String email);
 
     @FormUrlEncoded
     @HTTP(method = "DELETE", path = "compton", hasBody = true)
-    Call<ComptonService> deleteComtonModel(@Field("bp") String bp);
+    Call<ComptonView> deleteComtonModel(@Field("bp") String bp);
 }

@@ -2,14 +2,12 @@ package com.example.friday.Model;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.ArrayList;
-
-public class ComptonDao {
+public class ComptonView {
 
     @SerializedName("status")
     String status;
     @SerializedName("result")
-    ArrayList<ComptonModel> comptonModelArrayList;
+    ComptonModel comptonModel;
     @SerializedName("message")
     String message;
 
@@ -21,12 +19,12 @@ public class ComptonDao {
         this.status = status;
     }
 
-    public ArrayList<ComptonModel> getComptonModels() {
-        return comptonModelArrayList;
+    public ComptonModel getComptonModel() {
+        return comptonModel;
     }
 
-    public void setComptonModels(ArrayList<ComptonModel> comptonModels) {
-        this.comptonModelArrayList = comptonModels;
+    public void setComptonModel(ComptonModel comptonModel) {
+        this.comptonModel = comptonModel;
     }
 
     public String getMessage() {

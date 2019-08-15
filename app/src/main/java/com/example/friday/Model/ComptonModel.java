@@ -4,51 +4,51 @@ import com.google.gson.annotations.SerializedName;
 
 public class ComptonModel {
 
-    @SerializedName("name")
-    private String name;
-    @SerializedName("bp")
-    private String bp;
-    @SerializedName("email")
-    private String email;
-    @SerializedName("photo")
-    private int photo;
+    @SerializedName("userId")
+    private String userId;
+    @SerializedName("id")
+    private String id;
+    @SerializedName("title")
+    private String title;
+    @SerializedName("completed")
+    private String completed;
 
-    public ComptonModel(String name, String bp, String email, int photo){
-        this.name = name;
-        this.bp = bp;
-        this.email = email;
-        this.photo = photo;
+    public ComptonModel(String userId, String id, String title, String completed){
+        this.userId = userId;
+        this.id = id;
+        this.title = title;
+        this.completed = completed;
     }
 
-    public String getName() {
-        return name;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public String getBp() {
-        return bp;
+    public String getId() {
+        return id;
     }
 
-    public void setBp(String bp) {
-        this.bp = bp;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getEmail() {
-        return email;
+    public String getTitle() {
+        return title;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public int getPhoto() {
-        return photo;
+    public String getCompleted() {
+        return completed;
     }
 
-    public void setPhoto(int photo) {
-        this.photo = photo;
+    public void setCompleted(String completed) {
+        this.completed = completed;
     }
 }
