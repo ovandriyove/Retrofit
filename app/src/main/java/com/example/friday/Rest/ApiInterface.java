@@ -13,18 +13,19 @@ import retrofit2.http.PUT;
 
 public class ApiInterface {
 
-    @GET("comptons")
+    @GET("todos")
     Call<ComptonOperation> getComptonModel();
 
-    @FormUrlEncoded;
-    @POST("compton")
-    Call<ComptonView> postComptonModel(@Field("userId") String userId, @Field("email") String email);
-
-    @FormUrlEncoded
-    @PUT("compton")
-    Call<ComptonView> putComptonModel (@Field("bp") String bp, @Field("name") String name, @Field("email") String email);
-
-    @FormUrlEncoded
-    @HTTP(method = "DELETE", path = "compton", hasBody = true)
-    Call<ComptonView> deleteComtonModel(@Field("bp") String bp);
+//    @FormUrlEncoded;
+//    @POST("compton")
+//    Call<ComptonView> postComptonModel(@Field("userId") String userId, @Field("id") String id,
+//                                       @Field("title") String title, @Field("completed") String completed);
+//
+//    @FormUrlEncoded
+//    @PUT("compton")
+//    Call<ComptonView> putComptonModel (@Field("id") String id, @Field("title") String title, @Field("completed") String completed);
+//
+//    @FormUrlEncoded
+//    @HTTP(method = "DELETE", path = "compton", hasBody = true)
+//    Call<ComptonView> deleteComtonModel(@Field("id") String id);
 }
