@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-public class ComptonOperation {
+public class OperationModel {
 
     @SerializedName("status")
     String status;

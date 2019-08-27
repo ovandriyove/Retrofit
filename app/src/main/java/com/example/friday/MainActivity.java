@@ -1,4 +1,4 @@
-package com.example.friday.Rest;
+package com.example.friday;
 
 import androidx.appcompat.app.AppCompatActivity;
 

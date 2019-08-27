@@ -2,7 +2,7 @@ package com.example.friday.Model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class ComptonView {
+public class ViewModel {
 
     @SerializedName("status")
     String status;
